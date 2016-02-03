@@ -135,7 +135,7 @@ footer p.right {float:right;
 #divmsucc{color:#36FF95;text-align:center;}
 a:link{text-decoration:none;}
 
-.newsdetail{
+.newsdetail{padding:20px;
 			overflow:auto;}
 .divdata{height:auto;}
 .clear:after {content: ".";

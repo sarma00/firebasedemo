@@ -7,13 +7,36 @@
 		
 		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 		<script>
-			var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com");
-			myFirebaseRef.child("news5").on("value", function(snapshot) {
+			var news=window.location.hash.substring(1);
+			//alert(var1);
+			if(news=="news5"){
+				var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com");
+				myFirebaseRef.child("news5").on("value", function(snapshot) {
+				//alert(snapshot.val()); 
+				document.getElementById('para1').innerHTML=snapshot.val();
+				
+				});
+			}
+			else if(news=="news2"){
+				var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com");
+				myFirebaseRef.child("news2").on("value", function(snapshot) {
 				//alert(snapshot.val()); 
 				document.getElementById('para1').innerHTML=snapshot.val();
 				
 			});
-			
+			}
+			else if(news=="news3"){var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com");
+				myFirebaseRef.child("news3").on("value", function(snapshot) {
+				//alert(snapshot.val()); 
+				document.getElementById('para1').innerHTML=snapshot.val();
+				
+			});}
+				else if(news=="news4"){var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com");
+				myFirebaseRef.child("news4").on("value", function(snapshot) {
+				//alert(snapshot.val()); 
+				document.getElementById('para1').innerHTML=snapshot.val();
+				
+			});}
 		</script>
 		
 		<script src="validation.js"></script>
