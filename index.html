@@ -7,20 +7,21 @@
 		
 		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 		<script>
-			var myFirebaseRef = new Firebase("https://sarma.firebaseio.com/");
-			myFirebaseRef.child("textcase1").on("value", function(snapshot) {
+			var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com");
+			myFirebaseRef.child("news5").on("value", function(snapshot) {
 				//alert(snapshot.val()); 
 				document.getElementById('para1').innerHTML=snapshot.val();
+				
 			});
-			myFirebaseRef.child("textcase2").on("value", function(snapshot) {
+			myFirebaseRef.child("news2").on("value", function(snapshot) {
 				//alert(snapshot.val()); 
 				document.getElementById('para2').innerHTML=snapshot.val();
 			});
-			myFirebaseRef.child("textcase3").on("value", function(snapshot) {
+			myFirebaseRef.child("news3").on("value", function(snapshot) {
 				//alert(snapshot.val()); 
 				document.getElementById('para3').innerHTML=snapshot.val();
 			});
-			myFirebaseRef.child("textcase4").on("value", function(snapshot) {
+			myFirebaseRef.child("news4").on("value", function(snapshot) {
 				//alert(snapshot.val()); 
 				document.getElementById('para4').innerHTML=snapshot.val();
 			});
@@ -53,25 +54,27 @@
 			<section id="content" class="column-right">
                 <article>
 					<div class="divclass">
-						<div  id="para1">							
+					
+						<div  id="para1" class="newscontent">							
 						</div>
+						<div id="head1"></div>
 						<div class="readmore"><a href="para.html">Read More</a></div>
 					</div>
 					<div class="divclass">
-						<div  id="para2">
-							<p><button type="button" value="Read More"></button></p>
+						<div  id="para2" class="newscontent">
+							
 						</div>
 						<div class="readmore"><a href="para2.html">Read More</a></div>
 					</div>
 					<div class="divclass">
-						<div  id="para3">
-							<p><button type="button" value="Read More"></button></p>
+						<div  id="para3" class="newscontent">
+							
 						</div>
 						<div class="readmore"><a href="para3.html">Read More</a></div>
 					</div>
 					<div class="divclass">
-						<div  id="para4">
-							<p><button type="button" value="Read More"></button></p>
+						<div  id="para4" class="newscontent">
+							
 						</div>
 						<div class="readmore"><a href="para4.html">Read More</a></div>
 					</div>

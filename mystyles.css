@@ -114,12 +114,13 @@ footer{padding:20px 0px;
 	border-top:1px solid #ccc;}
 	
 #contentleft{float:left;width:50%;padding:20px;}
-.divclass{border:1px groove Azure;height:60px;padding:10px;margin:10px;background-color:Azure;}
+.divclass{border:1px groove Azure;height:120px;margin:10px;background-color:Azure;}
 .divmsgerr{color:red;text-align:center;}
 footer p {color:#000;
 		margin:0;
 		font-size:11px;
 		width:50%;}
+h4{color:blue;}
 
 footer p.left {float:left; 
 		text-align:left;
@@ -127,9 +128,16 @@ footer p.left {float:left;
 .readmore{float:right;padding-top:20px;}
 footer p.right {float:right; 
 		text-align:right;}
-
+.newscontent{overflow: hidden;
+			max-width: 75ch;
+			white-space: nowrap;
+			text-overflow: ellipsis;}
 #divmsucc{color:#36FF95;text-align:center;}
+a:link{text-decoration:none;}
 
+.newsdetail{
+			overflow:auto;}
+.divdata{height:auto;}
 .clear:after {content: ".";
 		display: block;
 		clear: both;

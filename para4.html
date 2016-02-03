@@ -7,20 +7,9 @@
 		
 		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 		<script>
-			var myFirebaseRef = new Firebase("https://sarma.firebaseio.com/");
-			myFirebaseRef.child("textcase1").on("value", function(snapshot) {
-				//alert(snapshot.val()); 
-				document.getElementById('para1').innerHTML=snapshot.val();
-			});
-			myFirebaseRef.child("textcase2").on("value", function(snapshot) {
-				//alert(snapshot.val()); 
-				document.getElementById('para2').innerHTML=snapshot.val();
-			});
-			myFirebaseRef.child("textcase3").on("value", function(snapshot) {
-				//alert(snapshot.val()); 
-				document.getElementById('para3').innerHTML=snapshot.val();
-			});
-			myFirebaseRef.child("textcase4").on("value", function(snapshot) {
+			var myFirebaseRef = new Firebase("https://sarma1.firebaseio.com/");
+			
+			myFirebaseRef.child("news4").on("value", function(snapshot) {
 				//alert(snapshot.val()); 
 				document.getElementById('para4').innerHTML=snapshot.val();
 			});
@@ -41,9 +30,9 @@
 		<!-- End Header -->	
 		</div>
 	
-		<div class="divclass"><div>Heading 1</div>
-						<div  id="para4">
-							<p><button type="button" value="Read More"></button></p>
+		<div class="divclass newsdetail">
+						<div  id="para4" >
+
 						</div>
 						
 		</div>
